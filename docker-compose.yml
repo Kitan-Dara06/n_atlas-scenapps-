@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  n-atlas-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - HF_TOKEN=${HF_TOKEN}
+      - N_ATLAS_MODEL=NCAIR1/NigerianAccentedEnglish
+      - LOG_LEVEL=INFO
+    volumes:
+      - ./temp_audio:/app/temp_audio
+    env_file:
+      - .env
+    restart: unless-stopped

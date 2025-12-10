@@ -1,0 +1,18 @@
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+pydantic==2.5.3
+pydantic-settings==2.1.0
+python-dotenv==1.0.0
+python-multipart==0.0.6
+
+# ML/Audio Processing
+transformers==4.36.2
+torch==2.1.2
+librosa==0.10.1
+soundfile==0.12.1
+
+# Video Processing
+moviepy==1.0.3
+
+# Utilities
+numpy==1.26.3
